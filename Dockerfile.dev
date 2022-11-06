@@ -1,0 +1,13 @@
+FROM node:16-alpine
+
+WORKDIR '/app'
+
+COPY package.json ./
+RUN npm install
+
+# Technically don't need since docker-compose.yml is
+# referencing our pwd but good to leave in case we
+# remove docker-compose.yml
+COPY . .
+
+CMD ["npm", "run", "start"]
