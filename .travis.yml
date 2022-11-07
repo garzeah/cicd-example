@@ -16,6 +16,6 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-1-683256801786"
   bucket_path: "cicdexample"
   on: # When we push code to master, that's when we deploy
-    branch: master
+    branch: main
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$AWS_SECRET_KEY"
