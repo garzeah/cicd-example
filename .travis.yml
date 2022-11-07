@@ -11,7 +11,7 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "cicdexample"
+  app: "cicd-example"
   env: "Cicdexample-env"
   bucket_name: "elasticbeanstalk-us-east-1-683256801786"
   bucket_path: "cicdexample"
