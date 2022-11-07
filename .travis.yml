@@ -7,4 +7,4 @@ before_install:
   - docker build -t garzeah/cicd-example -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true garzeah/cicd-example npm run test -- --coverage
+  - docker run -e CI=true garzeah/cicd-example npm run test
